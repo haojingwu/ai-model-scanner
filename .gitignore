@@ -6,7 +6,6 @@ dist/
 .venv/
 
 # Poetry
-poetry.lock  # 如果想锁定依赖就删掉这行，提交 lock 文件
 
 # 上传的文件
 uploads/
