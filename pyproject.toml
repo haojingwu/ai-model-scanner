@@ -1,0 +1,35 @@
+[project]
+name = "ai-model-scanner"
+version = "0.1.0"
+description = ""
+package-mode=false
+authors = [
+    {name = "haojingwu",email = "16309172+haojingwu@user.noreply.gitee.com"}
+]
+requires-python = ">=3.11,<3.15"
+dependencies = [
+    "fastapi (>=0.136.1,<0.137.0)",
+    "uvicorn[standard] (>=0.46.0,<0.47.0)",
+    "celery[redis] (>=5.6.3,<6.0.0)",
+    "redis (<6.5)",
+    "docker (>=7.1.0,<8.0.0)",
+    "python-magic (>=0.4.27,<0.5.0)",
+    "h5py (>=3.16.0,<4.0.0)",
+    "scikit-learn (>=1.8.0,<2.0.0)",
+    "yara-python (>=4.5.4,<5.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[dependency-groups]
+dev = [
+    "pytest (>=9.0.3,<10.0.0)",
+    "pytest-cov (>=7.1.0,<8.0.0)",
+    "black (>=26.3.1,<27.0.0)",
+    "ruff (>=0.15.12,<0.16.0)",
+    "mypy (>=2.0.0,<3.0.0)",
+    "torch (>=2.11.0,<3.0.0)"
+]
