@@ -1,0 +1,10 @@
+{
+  "scan_id": "df846718-35b3-4146-bb2c-f6a217a4c12e",
+  "risk_level": "MEDIUM",
+  "risk_score": 0.4,
+  "sandbox": {
+    "status": "docker_error",
+    "error": "run() got an unexpected keyword argument 'no_new_privileges'"
+  },
+  "ai_detection": {
+    "is_anomaly": 
